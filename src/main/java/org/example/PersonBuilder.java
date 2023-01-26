@@ -46,7 +46,6 @@ public class PersonBuilder {
 
     public Person build() {
         if (name == null) {
-            new PersonBuilder().setName("ываыа").build();
             throw new IllegalStateException("Вы не заполнили обязательное поле, " +
                     "для сохранения человека необходимо указать его имя. ");
         }

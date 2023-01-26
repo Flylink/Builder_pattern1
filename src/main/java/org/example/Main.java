@@ -13,10 +13,10 @@ public class Main {
         mom.happyBirthday();
         mom.happyBirthday();
 
-        mom.setAddress("Пушкинский дворец");
+        mom.setAddress("Пушкинский дворце");
 
         Person son = mom.newChildBuilder()
-                .setName("Чарльз Филипп Артур Джордж")
+                .setName("Артур")
                 .setAge(73)
                 .build();
 
@@ -28,7 +28,7 @@ public class Main {
         }
 
         try {
-            new PersonBuilder().setAge(130).build();
+            new PersonBuilder().setAge(99).build();
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
         }
